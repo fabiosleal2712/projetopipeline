@@ -1,3 +1,5 @@
 github.sh
 keyterraforn.pub
 keyterraforn
+.terraform/*
+*.hcl
