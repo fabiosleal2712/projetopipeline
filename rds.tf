@@ -8,7 +8,7 @@ resource "aws_db_parameter_group" "rds-mysql-param-group" {
 # DB Subnet Group
 resource "aws_db_subnet_group" "rds-mysql-subnet-group" {
   name       = "rds-mysql-subnet-group"
-  subnet_ids = [aws_subnet.private_1.id, aws_subnet.private_2.id]
+  subnet_ids = [aws_subnet.example.id, aws_subnet.example.id]
 }
 
 # DB instance
