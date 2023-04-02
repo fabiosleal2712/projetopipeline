@@ -10,6 +10,7 @@ resource "aws_instance" "example" {
   vpc_security_group_ids      = ["sg-01ceaee86002c8271"]
   subnet_id                   = "subnet-0a5dc38d5476fa9b5"
   associate_public_ip_address = true
+  #count                       = 2
 
   # ...
 }
