@@ -3,3 +3,5 @@ github.sh
 keyterraforn
 .terraform/*
 *.hcl
+*.tfstate
+*.tfstate.backup
