@@ -3,20 +3,21 @@ resource "aws_key_pair" "mykey" {
   public_key = var.aws_pub_key
 }
 
-resource "aws_instance" "example" {
+resource "aws_instance" "vm1" {
   ami                         = "ami-007855ac798b5175e"
   instance_type               = "t2.micro"
   key_name                    = aws_key_pair.mykey.key_name
   vpc_security_group_ids      = ["sg-01ceaee86002c8271"]
   subnet_id                   = "subnet-0a5dc38d5476fa9b5"
   associate_public_ip_address = true
+
   
 
   # ...
 }
 
 
-resource "aws_instance" "example2" {
+resource "aws_instance" "vm2" {
   ami                         = "ami-007855ac798b5175e"
   instance_type               = "t2.micro"
   key_name                    = aws_key_pair.mykey.key_name
