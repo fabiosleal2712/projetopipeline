@@ -18,6 +18,6 @@ provider "aws" {
 locals {
   common_tags = {
     Terraform   = "true"
-    Environment = var.example
+    Environment = var.example.id
   }
 }
