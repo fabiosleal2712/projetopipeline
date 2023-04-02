@@ -1,6 +1,6 @@
 resource "aws_key_pair" "key" {
   key_name   = "aws-key"
-  public_key = file("~/.ssh/id_rsa.pub")
+  public_key = file("keyterraforn.pub")
 }
 
 resource "aws_instance" "vm" {
