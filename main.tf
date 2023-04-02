@@ -31,7 +31,7 @@ data "terraform_remote_state" "vpc" {
   backend = "s3"
   config = {
     bucket = "fabio-remote-state"
-    key    = "aws-vpc5465486/terraform.tfstate"
+    key    = "aws-vpc54654846/terraform.tfstate"
     region = "us-east-1"
   }
 }
