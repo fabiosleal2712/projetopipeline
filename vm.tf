@@ -1,6 +1,6 @@
 resource "aws_key_pair" "mykey" {
-  key_name   = "mykey"
-  public_key = file("./keyterraforn.pub")
+  key_name   = "keyterraforn"
+  public_key = file(var.public_key_path)
 }
 
 resource "aws_instance" "example" {
