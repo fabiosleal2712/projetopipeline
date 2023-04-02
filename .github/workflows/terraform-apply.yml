@@ -6,19 +6,19 @@ env:
   TF_VAR_aws_pub_key: ${{secrets.AWS_PUBLIC_KEY}}
 
 
-  jobs:
-    terrafoem:
-      name: terraform
-      runs-on: ubuntu-lastest
-      defaults:
-        run:
-          shell: bash
-      steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+jobs:
+  terraform:
+    name: terraform
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
 
-      - name: Terraform Init
-        run: terraform init
+    - name: Terraform Init
+      run: terraform init
 
-      - name: Terraform Apply
-        run: terraform apply -auto-approve #Aprovad
+    - name: Terraform Apply
+      run: terraform apply -auto-approve
