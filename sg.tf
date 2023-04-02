@@ -1,8 +1,7 @@
-resource "aws_security_group" "sg1" {
-  name        = "sg1"
+resource "aws_security_group" "example" {
+  name        = "example"
   description = "Allow SSH inbound traffic"
-  vpc_id      = aws_vpc.vm1.id
-  
+  vpc_id      = aws_vpc.example.id
 
   ingress {
     from_port   = 22
