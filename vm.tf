@@ -1,7 +1,3 @@
-provider "aws" {
-  region = "us-east-1"
-}
-
 resource "aws_instance" "example" {
   key_name   = "my_keypair"
   ami           = "ami-0c94855ba95c71c99"
